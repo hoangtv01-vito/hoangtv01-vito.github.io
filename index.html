@@ -4,11 +4,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hoang Tran Portfolio</title>
+    <title>HoangTran Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #212428;
+            color: #919EB0;
+        }
+
+        .navbar {
+            background-color: #212428;
+            position: fixed;
+            width: 100%;
+            z-index: 10;
+        }
+
+        .navbar-brand {
+            color: #919EB0;
+        }
+
+        .nav-link {
+            color: #919EB0;
+        }
+
+        .nav-link:hover {
+            color: rgba(130, 158, 176, 0.7);
+        }
+
+        .nav-link.active {
+            color: #FFFFFF;
+        }
+
+        .intro-section {
+            padding-top: 80px;
+            /* To avoid content being hidden behind the fixed navbar */
+        }
+
+        .intro-section img {
+            max-width: 100%;
+            border-radius: 1rem;
+            /*border-radius: 50%;*/
+        }
+
+        .gradient-text-purple {
+            background: linear-gradient(45deg, #C006C2, #D10F86, #F2A0A5);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .red-text {
+            color: #FF014F;
+        }
+
+    </style>
 </head>
 
 <body>
-    Hello World
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                Myfolio
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experiences">EXPERIENCES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">PROJECTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container intro-section" id="home">
+        <div class="row align-items-center">
+            <div class="col-md-7 text-center text-md-left">
+                <h1 style="color: #FFFFFF;">Hi, I'm <span class="gradient-text-purple">Hoang Tran</span></h1>
+                <h1 style="color: #FFFFFF;">a Vulnerability Analyst</h1>
+                <p>🚀A passionate Vulnerability Analyst. 🌟Ensuring <span class="red-text">Confidentiality</span> -
+                    <span class="red-text">Integrity</span> -
+                    <span class="red-text">Availability</span> for
+                    systems⌨️
+                </p>
+            </div>
+            <div class="col-md-5 text-center">
+                <img src="assets/myimage.jpg" alt="My image">
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 
 </html>
