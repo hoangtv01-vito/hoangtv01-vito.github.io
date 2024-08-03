@@ -1,0 +1,48 @@
+body {
+    background-color: #212428;
+    color: #919EB0;
+}
+
+.navbar {
+    background-color: #212428;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+.navbar-brand {
+    color: #919EB0;
+}
+
+.nav-link {
+    color: #919EB0;
+}
+
+.nav-link:hover {
+    color: rgba(130, 158, 176, 0.7);
+}
+
+.nav-link.active {
+    color: #FFFFFF;
+}
+
+.intro-section {
+    padding-top: 80px;
+    /* To avoid content being hidden behind the fixed navbar */
+}
+
+.intro-section img {
+    max-width: 100%;
+    border-radius: 1rem;
+    /*border-radius: 50%;*/
+}
+
+.gradient-text-purple {
+    background: linear-gradient(45deg, #C006C2, #D10F86, #F2A0A5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.red-text {
+    color: #FF014F;
+}
