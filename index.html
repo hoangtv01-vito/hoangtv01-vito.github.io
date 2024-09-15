@@ -4,61 +4,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HoangTran Portfolio</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/styles.css">
+    <title>Hoang Tran Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body>
+    <div class="style__switcher"></div>
 
-    <nav class="navbar navbar-expand-lg">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                Myfolio
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#home">HOME</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#experiences">EXPERIENCES</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">PROJECTS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">CONTACT</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <header class="header">
 
-    <div class="container intro-section" id="home">
-        <div class="row align-items-center">
-            <div class="col-md-7 text-center text-md-left">
-                <h1 style="color: #FFFFFF;">Hi, I'm <span class="gradient-text-purple">Hoang Tran</span></h1>
-                <h1 style="color: #FFFFFF;">a Vulnerability Analyst</h1>
-                <p>🚀A passionate Vulnerability Analyst. 🌟Ensuring <span class="red-text">Confidentiality</span> -
-                    <span class="red-text">Integrity</span> -
-                    <span class="red-text">Availability</span> for
-                    systems⌨️
-                </p>
-            </div>
-            <div class="col-md-5 text-center">
-                <img src="assets/myimage.jpg" alt="My image">
-            </div>
-        </div>
-    </div>
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">HoangTran</a>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="#home" class="nav__link active-link">Home</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#about" class="nav__link">About</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#experiences" class="nav__link">Experiences</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#projects" class="nav__link">Projects</a>
+                </li>
+                </li>
+                <li class="nav__item">
+                    <a href="#skills" class="nav__link">Skills</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#portfolio" class="nav__link">Portfolio</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#contact" class="nav__link">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main class="main">
+        <section class="home" id="home">
+            <div class="home__container container grid">
+                <div class="home__content">
+                    <span class="home__small">Hello</span>
+                    <h1 class="home__title">
+                        <span>I'm</span> Hoang <br />
+                        a <span>Vulnerability Analyst</span>
+                    </h1>
+
+                    <p class="home__description">
+                        🚀A passionate Vulnerability Analyst. 🌟Ensuring Confidentiality - Integrity - Availability for
+                        systems⌨️
+                    </p>
+
+                    <div class="home__btns">
+                        <a href="#contact" class="btn">Contact Me</a>
+                        <a href="#portfolio" class="btn btn--transparent">Portfolio</a>
+                    </div>
+                </div>
+
+                <div class="home__img-wrapper">
+                    <img src="assets/img/myimage.jpg" alt="" class="home__img max_home_img" />
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="about"></section>
+        <section class="experiences" id="experiences"></section>
+        <section class="projects" id="project"></section>
+        <section class="skills" id="skills"></section>
+        <section class="portfolio" id="portfolio"></section>
+        <section class="contact" id="contact"></section>
+    </main>
+
+    <footer class="footer"></footer>
 </body>
 
 </html>
