@@ -13,10 +13,12 @@
     --first-color-light: hsl(268, 100%, 83%);
     --title-color: hsl(0, 0%, 87%);
     --text-color: hsl(0, 0%, 69%);
+    --gradient-purple: linear-gradient(45deg, #C006C2, #D10F86, #F2A0A5);
     --body-color: hsl(200, 12%, 5%);
     --container-color: hsl(200, 10%, 8%);
     --border-color: hsl(0, 0%, 20%);
     --white: #fff;
+    --red: #FF014F;
 
     /* Font and typography */
     --body-font: 'Jost', sans-serif;
@@ -83,6 +85,13 @@ img {
 }
 
 /* =============== REUSABLE CSS CLASSES =============== */
+.red {
+    color: var(--red);
+}
+
+.violet {
+    color: var(--first-color);
+}
 
 .container {
     max-width: 1200px;
@@ -145,6 +154,7 @@ img {
 .home {
     background-color: var(--container-color);
     padding-block: 9rem 3rem;
+    display: flex;
 }
 
 .home__container {
@@ -166,6 +176,16 @@ img {
 
 .home__title span {
     font-weight: var(--weight-300);
+}
+
+.name {
+    font-family: 'Clicker Script', cursive;
+    font-weight: 700;
+    color: var(--first-color);
+}
+
+.typing {
+    color: var(--first-color);
 }
 
 .home__description {
@@ -190,23 +210,13 @@ img {
 .home__img-wrapper::after {
     content: '';
     position: absolute;
-    inset: 0;
+    /* inset: 0; */
 
 }
 
-.home__img-wrapper::before {
-    background-color: var(--first-color-light);
-    animation: animate__before 8s ease-in-out infinite;
-}
-
-.home__img-wrapper::after {
-    background-color: var(--first-color);
-}
-
-.home__img-wrapper::after,
-.home__img {
-    animation: animate__after 8s ease-in-out infinite;
-}
+/* .home .home__img .img {
+    height: 400px;
+} */
 
 .home__img {
     z-index: 10;
@@ -214,8 +224,48 @@ img {
     vertical-align: middle;
 }
 
+
+.home__img-wrapper::after {
+    height: 80px;
+    width: 80px;
+    border-bottom: 10px solid var(--first-color);
+    border-right: 10px solid var(--first-color);
+    right: -30px;
+    bottom: -30px;
+}
+
+.home__img-wrapper::before {
+    height: 80px;
+    width: 80px;
+    border-top: 10px solid var(--first-color);
+    border-left: 10px solid var(--first-color);
+    left: -30px;
+    top: -30px;
+}
+
 /* Home animation */
-@keyframes animate__before {}
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(90deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    75% {
+        transform: rotate(270deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+
+    }
+}
 
 /* =============== BUTTON =============== */
 
