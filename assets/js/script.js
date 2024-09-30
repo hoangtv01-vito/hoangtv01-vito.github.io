@@ -6,3 +6,7 @@ var typed = new Typed(".typing",{
     BackSpeed:60,
     loop:true
 })
+
+$('.nav__item').on('click', function(){
+    $(this).addClass('active-link').siblings('li').removeClass('active-link');
+});

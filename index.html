@@ -7,6 +7,7 @@
     <title>Hoang Tran Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -55,9 +56,15 @@
         <nav class="nav container">
             <a href="index.html" class="nav__logo">HoangTran</a>
 
+            <input type="checkbox" id="nav-toggler">
+
+            <label for="nav-toggler" class="nav__toggle">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+
             <ul class="nav__list">
-                <li class="nav__item">
-                    <a href="#home" class="nav__link active-link">Home</a>
+                <li class="nav__item active-link">
+                    <a href="#home" class="nav__link">Home</a>
                 </li>
                 <li class="nav__item">
                     <a href="#about" class="nav__link">About</a>
@@ -100,7 +107,7 @@
 
                     <div class="home__btns">
                         <a href="#contact" class="btn">Contact Me</a>
-                        <a href="#portfolio" class="btn btn--transparent">Portfolio</a>
+                        <a href="#experiences" class="btn btn--transparent">Experiences</a>
                     </div>
                 </div>
 
@@ -284,8 +291,6 @@
                 </div>
             </div>
         </section>
-
-
 
         <!-- ========================= PROJECTS ========================= -->
         <section class="projects works section" id="projects">
