@@ -74,7 +74,8 @@ button {
 }
 
 h1,
-h2, h3 {
+h2,
+h3 {
     color: var(--title-color);
     font-weight: var(--weight-600);
 }
@@ -1104,6 +1105,10 @@ input[type='checkbox'] {
     .footer__container {
         flex-direction: column;
         row-gap: 1rem;
+    }
+
+    .work__img {
+        max-height: 260px;
     }
 }
 
